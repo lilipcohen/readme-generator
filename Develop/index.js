@@ -33,7 +33,19 @@ const questions = ([
       name: 'tests',
     },
     //choose license options from a list?
-
+    //link to github account? add to readme section?
+    {
+      type: 'input',
+      message: 'Enter your github username:',
+      name: 'username',
+    },
+    //added to questions?
+    {
+      type: 'input',
+      message: 'Enter your email address:',
+      name: 'email',
+    },
+    //table of contents?
 ]);
 
 // function to write README file
