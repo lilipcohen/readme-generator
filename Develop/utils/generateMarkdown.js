@@ -13,9 +13,21 @@ function generateMarkdown(data) {
       break;
     
   }
-  return `# ${data.title}
-  [your github link](https://github.com/${data.username})
+  return `# ${data.title} 
   ${badge}
+  ## Description 
+  ${data.description}
+  ## Installation
+  ${data.installation}
+  ## Usage
+  ${data.usage}
+  ## Contributing
+  ${data.contribution}
+  ## Test
+  ${data.tests}
+  ### Questions
+  [your github link](https://github.com/${data.username})
+  Please email me, ${data.email}, if you have any further questions.
 `;
 }
 
