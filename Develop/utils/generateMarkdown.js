@@ -15,22 +15,21 @@ function generateMarkdown(data) {
   }
   return `# ${data.title} 
   ${badge}
-  ## Table of Contents
-  [Description](#Decription)
+  ## Description 
+  ${data.description}
+  ### Table of Contents
   [Installation](#Installation)
   [Usage](#Usage)
   [Contributing](#Contributing)
   [Test](#Test)
   [Questions](#Questions)
-  ### Description 
-  ${data.description}
-  ### Installation
+  #### Installation
   ${data.installation}
-  ### Usage
+  #### Usage
   ${data.usage}
-  ### Contributing
+  #### Contributing
   ${data.contribution}
-  ### Test
+  #### Test
   ${data.tests}
   #### Questions
   [your github link](https://github.com/${data.username})
