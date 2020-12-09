@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = ([
@@ -33,6 +34,12 @@ const questions = ([
       name: 'tests',
     },
     //choose license options from a list?
+      {
+      type: 'list',
+          message: 'Choose one license:',
+          choices: ["MIT", "ISC", "Apache-2.0"],
+      name: 'license',
+    },
     //link to github account? add to readme section?
     {
       type: 'input',
@@ -50,11 +57,15 @@ const questions = ([
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFileSync(`output-${fileName}`, data);
 }
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions).then((answers) => {
+        const markDown = generateMarkdown(answers);
+        writeToFile("README.md", markDown);
+    });
 }
 
 // function call to initialize program
