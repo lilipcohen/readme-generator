@@ -11,7 +11,6 @@ function generateMarkdown(data) {
     case "Apache-2.0": 
       badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
       break;
-    
   }
   return `# ${data.title} 
   ${badge}
