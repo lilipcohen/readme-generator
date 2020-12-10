@@ -12,6 +12,6 @@ using terminal git clone "pasted repo https"
 ![Image](assets/photos/photo-2.png)
 install inquirer package to utilize the generator
 ![Image](assets/photos/photo-3.png)
-[Link](https://drive.google.com/file/d/1qcBnY956Dkeoioh5BZgOMDyUig-un3f3/view)
+[ Click here for a Video Tutorial](https://drive.google.com/file/d/1qcBnY956Dkeoioh5BZgOMDyUig-un3f3/view)
 
 ## Readme Example
