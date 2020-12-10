@@ -50,5 +50,6 @@ make sure to save ciri
 
 #### Questions
 
-[your github link](https://github.com/lilipcohen)
+[your github link](https://github.com/lilicohe)
+
 Please email me, lili.cohen.tv@gmail.com, if you have any further questions.
